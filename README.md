@@ -1,11 +1,11 @@
 Clean Blog
 ---
-**Contributors:** deviodigital
+**Contributors:** deviodigital  
 **Tags:** theme, templates  
-**Requires at least:** 3.4
-**Tested up to:** 4.2.4
-**Stable tag:** 1.0.0
-**License:** GPLv2 or later
+**Requires at least:** 3.4  
+**Tested up to:** 4.2.4  
+**Stable tag:** 1.0.0  
+**License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
 Personal blogging theme, free of clutter, with a focus on the writers words while not sacrificing visual quality.
