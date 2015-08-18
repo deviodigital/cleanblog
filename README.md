@@ -4,7 +4,7 @@ Clean Blog
 **Tags:** theme, templates  
 **Requires at least:** 3.4  
 **Tested up to:** 4.2.4  
-**Stable tag:** 1.0.0  
+**Stable tag:** 1.0.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,9 @@ Looking for more details behind the theme that aren't included in this readme do
 
 ## Changelog
 
+### 1.0.1
+* minor CSS edits
+
 ### 1.0.0
 * Initial release
 
@@ -59,7 +62,6 @@ This theme wouldn't have been possible without the following open source resourc
 * [Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/) Bootstrap template from Start Bootstrap
 * [Underscores](http://underscores.me/) starter WordPress theme
 * [Subtitles](https://wordpress.org/plugins/subtitles/) plugin from Philip Arthur Moore
-* [Theme Customizer codes](https://github.com/tommcfarlin/theme-customizer-example) from Tom Mcfarlin
 * [Theme Customizer codes](https://github.com/tommcfarlin/theme-customizer-example) from Tom Mcfarlin
 * [WP Test](http://www.wptest.io/) sample content for testing your theme under a variety of circumstances
 * [Font Awesome](http://www.fontawesome.io/) iconic font set

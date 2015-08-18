@@ -1,5 +1,5 @@
 /*!
- * Clean Blog v1.0.0 (http://startbootstrap.com)
+ * Clean Blog v1.0.1 (http://startbootstrap.com)
  * Copyright 2014 Start Bootstrap
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
@@ -40,6 +40,9 @@ blockquote {
   color: #808080;
   font-style: italic;
 }
+li a {
+  text-decoration: underline;
+}
 hr.small {
   max-width: 100px;
   margin: 15px auto;
@@ -58,6 +61,7 @@ hr.small {
   font-weight: 800;
 }
 .navbar-custom .nav li a {
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 800;
