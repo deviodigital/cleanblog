@@ -4,7 +4,7 @@ Clean Blog
 **Tags:** theme, templates  
 **Requires at least:** 3.4  
 **Tested up to:** 4.3.0  
-**Stable tag:** 1.0.1  
+**Stable tag:** 1.0.2  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,9 @@ Looking for more details behind the theme that aren't included in this readme do
 ![Theme Customizer options](http://www.robertdevore.com/wp-content/uploads/2015/08/customizer-options.jpg)
 
 ## Changelog
+
+### 1.0.2
+* added action hooks to various files for added customizability
 
 ### 1.0.1
 * minor CSS edits
