@@ -9,6 +9,8 @@ get_header(); ?>
 
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
+			<?php do_action('cleanblog_single_top'); ?>
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
@@ -34,6 +36,9 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+
+			<?php do_action('cleanblog_single_bottom'); ?>
+
 		</div>
 		<!-- /.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1 -->
 

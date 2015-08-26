@@ -8,6 +8,9 @@
 get_header(); ?>
 
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+			<?php do_action('cleanblog_404_top'); ?>
+
 			<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'cleanblog' ); ?></h1>
 			<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'cleanblog' ); ?></p>
 
@@ -39,6 +42,8 @@ get_header(); ?>
 					?>
 
 					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
+
+			<?php do_action('cleanblog_404_bottom'); ?>
 
 	</div>
 	<!-- /.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1 -->
