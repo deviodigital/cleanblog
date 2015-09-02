@@ -18,7 +18,7 @@ The beauty is in it's mininmalism. No exhaustive set of features to customize be
 
 It works immediately on upload. Yet, I did want to give some options in the Customizer that would allow you to make the theme uniquely your own.
 
-**Recommended:** Download a use the [Clean Blog child theme](https://github.com/deviodigital/cleanblog-child) when customizing your website, so you can keep the main *Clean Blog* theme up-to-date without overriding your edits.
+**Recommended:** Download and use the [Clean Blog child theme](https://github.com/deviodigital/cleanblog-child) when customizing your website, so you can keep the main *Clean Blog* theme up-to-date without overriding your edits.
 
 ## Live Demo &amp; Release Notes
 
