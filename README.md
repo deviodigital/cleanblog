@@ -4,7 +4,7 @@ Clean Blog
 **Tags:** theme, templates  
 **Requires at least:** 3.4  
 **Tested up to:** 4.3.0  
-**Stable tag:** 1.0.2  
+**Stable tag:** 1.0.3  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,8 @@ Clean Blog is a WordPress theme with no sidebar, no excess clutter, easy to read
 The beauty is in it's mininmalism. No exhaustive set of features to customize before being able to write.
 
 It works immediately on upload. Yet, I did want to give some options in the Customizer that would allow you to make the theme uniquely your own.
+
+**Recommended:** Download a use the [Clean Blog child theme](https://github.com/deviodigital/cleanblog-child) when customizing your website, so you can keep the main *Clean Blog* theme up-to-date without overriding your edits.
 
 ## Live Demo &amp; Release Notes
 
@@ -48,6 +50,9 @@ Looking for more details behind the theme that aren't included in this readme do
 ![Theme Customizer options](http://www.robertdevore.com/wp-content/uploads/2015/08/customizer-options.jpg)
 
 ## Changelog
+
+### 1.0.3
+* minor CSS edits
 
 ### 1.0.2
 * added action hooks to various files for added customizability
