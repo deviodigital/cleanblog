@@ -374,7 +374,7 @@ function cleanblog_sanitize_input( $input ) {
 	return strip_tags( stripslashes( $input ) );
 } // end cleanblog_sanitize_input
 
-function sdm_sanitize_copyright( $input ) {
+function cleanblog_sanitize_copyright( $input ) {
 	$allowed = array(
 		's'			=> array(),
 		'br'		=> array(),
