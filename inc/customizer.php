@@ -278,7 +278,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 		'cleanblog_footer_copyright_text',
 		array(
 			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
+			'sanitize_callback'  => 'cleanblog_sanitize_copyright',
 			'transport'          => 'refresh'
 		)
 	);
@@ -373,6 +373,74 @@ add_action( 'customize_register', 'cleanblog_register_theme_customizer' );
 function cleanblog_sanitize_input( $input ) {
 	return strip_tags( stripslashes( $input ) );
 } // end cleanblog_sanitize_input
+
+function sdm_sanitize_copyright( $input ) {
+	$allowed = array(
+		's'			=> array(),
+		'br'		=> array(),
+		'em'		=> array(),
+		'i'			=> array(),
+		'strong'	=> array(),
+		'b'			=> array(),
+		'a'			=> array(
+			'href'			=> array(),
+			'title'			=> array(),
+			'class'			=> array(),
+			'id'			=> array(),
+			'style'			=> array(),
+		),
+		'form'		=> array(
+			'id'			=> array(),
+			'class'			=> array(),
+			'action'		=> array(),
+			'method'		=> array(),
+			'autocomplete'	=> array(),
+			'style'			=> array(),
+		),
+		'input'		=> array(
+			'type'			=> array(),
+			'name'			=> array(),
+			'class' 		=> array(),
+			'id'			=> array(),
+			'value'			=> array(),
+			'placeholder'	=> array(),
+			'tabindex'		=> array(),
+			'style'			=> array(),
+		),
+		'img'		=> array(
+			'src'			=> array(),
+			'alt'			=> array(),
+			'class'			=> array(),
+			'id'			=> array(),
+			'style'			=> array(),
+			'height'		=> array(),
+			'width'			=> array(),
+		),
+		'span'		=> array(
+			'class'			=> array(),
+			'id'			=> array(),
+			'style'			=> array(),
+		),
+		'p'			=> array(
+			'class'			=> array(),
+			'id'			=> array(),
+			'style'			=> array(),
+		),
+		'div'		=> array(
+			'class'			=> array(),
+			'id'			=> array(),
+			'style'			=> array(),
+		),
+		'blockquote' => array(
+			'cite'			=> array(),
+			'class'			=> array(),
+			'id'			=> array(),
+			'style'			=> array(),
+		),
+	);
+    return wp_kses( $input, $allowed );
+} // end cleanblog_sanitize_copyright
+
 /**
  * Writes styles out the `<head>` element of the page based on the configuration options
  * saved in the Theme Customizer.

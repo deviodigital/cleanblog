@@ -51,6 +51,9 @@ Looking for more details behind the theme that aren't included in this readme do
 
 ## Changelog
 
+### 1.0.4
+* fixed copyright input in the customizer from stripping html tags
+
 ### 1.0.3
 * minor CSS edits
 
