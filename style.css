@@ -400,7 +400,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 30px 30px;
+	margin: 0 0 30px 30px !important;
 }
 
 ul {
