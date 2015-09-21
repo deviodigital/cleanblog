@@ -83,7 +83,7 @@ function cleanblog_posted_on() {
 
 	$posted_on = sprintf(
 		esc_html_x( 'on %s', 'post date', 'cleanblog' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		$time_string
 	);
 
 	$byauthor = sprintf('<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
