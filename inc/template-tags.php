@@ -64,6 +64,11 @@ if ( ! function_exists( 'cleanblog_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function cleanblog_posted_on() {
+	$author_id;
+	if (is_singular()) {
+		$author_id = get_queried_object()->post_author;
+	}
+	
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -81,9 +86,15 @@ function cleanblog_posted_on() {
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
+	$byauthor = sprintf('<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+		esc_url( get_author_posts_url( get_the_author_meta('ID', $author_id) ) ),
+		esc_attr( sprintf( __( 'View all posts by %s', 'cleanblog' ), get_the_author_meta("display_name", $author_id) ) ),
+		get_the_author_meta("display_name", $author_id)
+	);
+	
 	$byline = sprintf(
-		esc_html_x( 'Posted by %s', 'posted by', 'cleanblog' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		esc_html_x( 'Posted by %s', 'posted by', 'cleanblog' ), 
+		$byauthor
 	);
 
 	echo '<span class="byline"> ' . $byline . '</span> <span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
