@@ -53,6 +53,7 @@ Looking for more details behind the theme that aren't included in this readme do
 
 ### 1.0.5
 * fixed 'Posted By' author not working outside of loop
+* removed the link from the date at the top of single posts
 
 ### 1.0.4
 * fixed copyright input in the customizer from stripping html tags
