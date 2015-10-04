@@ -1,4 +1,4 @@
-# Copyright (C) 2015 Automattic
+# Copyright (C) 2015 Devio Digital
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
@@ -9,26 +9,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Robert DeVore <me@robertdevore.com>\n"
+"Language-Team: Robert DeVore <me@robertdevore.com>\n"
 
-#: 404.php:15
+#: 404.php:14
 #@ _s
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:19
+#: 404.php:15
 #@ _s
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: 404.php:27
+#: 404.php:23
 #@ _s
 msgid "Most Used Categories"
 msgstr ""
 
 #. translators: %1$s: smiley
-#: 404.php:44
+#: 404.php:40
 #, php-format
 #@ _s
 msgid "Try looking in the monthly archives. %1$s"
@@ -89,14 +89,14 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:100
+#: functions.php:157
 #@ _s
-msgid "Sidebar"
+msgid "Read More"
 msgstr ""
 
-#: header.php:23
+#: header.php:36
 #@ _s
-msgid "Skip to content"
+msgid "Toggle navigation"
 msgstr ""
 
 #: inc/extras.php:52
@@ -105,210 +105,205 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: inc/template-tags.php:23
-#@ _s
-msgid "Posts navigation"
-msgstr ""
-
-#: inc/template-tags.php:27
+#: inc/template-tags.php:24
 #@ _s
 msgid "Older posts"
 msgstr ""
 
-#: inc/template-tags.php:31
+#: inc/template-tags.php:27
 #@ _s
 msgid "Newer posts"
 msgstr ""
 
-#: inc/template-tags.php:56
+#: inc/template-tags.php:50
 #@ _s
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:86
+#: inc/template-tags.php:85
 #, php-format
 #@ _s
 msgctxt "post date"
-msgid "Posted on %s"
+msgid "on %s"
 msgstr ""
 
 #: inc/template-tags.php:91
 #, php-format
 #@ _s
-msgctxt "post author"
-msgid "by %s"
+msgid "View all posts by %s"
+msgstr ""
+
+#: inc/template-tags.php:96
+#, php-format
+#@ _s
+msgctxt "posted by"
+msgid "Posted by %s"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:108
-#: inc/template-tags.php:114
+#: inc/template-tags.php:113
 #@ _s
 msgid ", "
 msgstr ""
 
-#: inc/template-tags.php:110
+#: inc/template-tags.php:115
 #, php-format
 #@ _s
-msgid "Posted in %1$s"
+msgid "Posted in %1$s &nbsp;&middot;&nbsp; "
 msgstr ""
 
-#: inc/template-tags.php:116
+#: inc/template-tags.php:121
 #, php-format
 #@ _s
 msgid "Tagged %1$s"
 msgstr ""
 
-#: inc/template-tags.php:122
+#: inc/template-tags.php:127
 #@ _s
 msgid "Leave a comment"
 msgstr ""
 
-#: inc/template-tags.php:122
+#: inc/template-tags.php:127
 #@ _s
 msgid "1 Comment"
 msgstr ""
 
-#: inc/template-tags.php:122
+#: inc/template-tags.php:127
 #@ _s
 msgid "% Comments"
 msgstr ""
 
-#: inc/template-tags.php:126
+#: inc/template-tags.php:131
 #: template-parts/content-page.php:26
 #@ _s
 msgid "Edit"
 msgstr ""
 
-#: inc/template-tags.php:143
+#: inc/template-tags.php:148
 #, php-format
 #@ _s
 msgid "Category: %s"
 msgstr ""
 
-#: inc/template-tags.php:145
+#: inc/template-tags.php:150
 #, php-format
 #@ _s
 msgid "Tag: %s"
 msgstr ""
 
-#: inc/template-tags.php:147
+#: inc/template-tags.php:152
 #, php-format
 #@ _s
 msgid "Author: %s"
 msgstr ""
 
-#: inc/template-tags.php:149
+#: inc/template-tags.php:154
 #, php-format
 #@ _s
 msgid "Year: %s"
 msgstr ""
 
-#: inc/template-tags.php:149
+#: inc/template-tags.php:154
 #@ _s
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: inc/template-tags.php:151
+#: inc/template-tags.php:156
 #, php-format
 #@ _s
 msgid "Month: %s"
 msgstr ""
 
-#: inc/template-tags.php:151
+#: inc/template-tags.php:156
 #@ _s
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr ""
 
-#: inc/template-tags.php:153
+#: inc/template-tags.php:158
 #, php-format
 #@ _s
 msgid "Day: %s"
 msgstr ""
 
-#: inc/template-tags.php:153
+#: inc/template-tags.php:158
 #@ _s
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr ""
 
-#: inc/template-tags.php:156
+#: inc/template-tags.php:161
 #@ _s
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr ""
 
-#: inc/template-tags.php:158
+#: inc/template-tags.php:163
 #@ _s
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr ""
 
-#: inc/template-tags.php:160
+#: inc/template-tags.php:165
 #@ _s
 msgctxt "post format archive title"
 msgid "Images"
 msgstr ""
 
-#: inc/template-tags.php:162
+#: inc/template-tags.php:167
 #@ _s
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr ""
 
-#: inc/template-tags.php:164
+#: inc/template-tags.php:169
 #@ _s
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr ""
 
-#: inc/template-tags.php:166
+#: inc/template-tags.php:171
 #@ _s
 msgctxt "post format archive title"
 msgid "Links"
 msgstr ""
 
-#: inc/template-tags.php:168
+#: inc/template-tags.php:173
 #@ _s
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr ""
 
-#: inc/template-tags.php:170
+#: inc/template-tags.php:175
 #@ _s
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr ""
 
-#: inc/template-tags.php:172
+#: inc/template-tags.php:177
 #@ _s
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr ""
 
-#: inc/template-tags.php:175
+#: inc/template-tags.php:180
 #, php-format
 #@ _s
 msgid "Archives: %s"
 msgstr ""
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
-#: inc/template-tags.php:179
+#: inc/template-tags.php:184
 #, php-format
 #@ _s
 msgid "%1$s: %2$s"
 msgstr ""
 
-#: inc/template-tags.php:181
+#: inc/template-tags.php:186
 #@ _s
 msgid "Archives"
-msgstr ""
-
-#: search.php:16
-#, php-format
-#@ _s
-msgid "Search Results for: %s"
 msgstr ""
 
 #: template-parts/content-none.php:14
@@ -330,18 +325,4 @@ msgstr ""
 #: template-parts/content-none.php:29
 #@ _s
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
-
-#: template-parts/content-page.php:19
-#: template-parts/content-single.php:23
-#: template-parts/content.php:32
-#@ _s
-msgid "Pages:"
-msgstr ""
-
-#. translators: %s: Name of current post 
-#: template-parts/content.php:25
-#, php-format
-#@ _s
-msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
