@@ -154,7 +154,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // Add a Read More link to the end of the excerpt
 function custom_excerpt_more( $more ) {
-	return ' ... <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'your-text-domain' ) . '</a>';
+	return ' ... <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'cleanblog' ) . '</a>';
 }
 add_filter( 'excerpt_more', 'custom_excerpt_more' );
 
