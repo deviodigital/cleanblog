@@ -289,9 +289,9 @@ function cleanblog_header() { ?>
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
                         <h1><?php single_post_title(); ?></h1>
-						<?php if ( function_exists( 'the_subtitle' ) ) {
-							the_subtitle( '<h2 class="subheading">', '</h2>' );
-						} ?>
+			<?php if ( function_exists( 'the_subtitle' ) ) {
+				the_subtitle( '<h2 class="subheading">', '</h2>' );
+			} ?>
                         <span class="meta"><?php cleanblog_posted_on(); ?></span>
                     </div>
                 </div>
@@ -313,9 +313,9 @@ function cleanblog_header() { ?>
                     <div class="site-heading">
                         <h1><?php single_post_title(); ?></h1>
                         <hr class="small">
-						<?php if ( function_exists( 'the_subtitle' ) ) {
-							the_subtitle( '<span class="subheading">', '</span>' );
-						} ?>
+			<?php if ( function_exists( 'the_subtitle' ) ) {
+				the_subtitle( '<span class="subheading">', '</span>' );
+			} ?>
                     </div>
 					<!-- /.site-heading -->
                 </div>
@@ -335,17 +335,17 @@ function cleanblog_header() { ?>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Search Results</h1>
+                        <h1><?php esc_html_e( 'Search Results', 'cleanblog' ); ?></h1>
                         <hr class="small">
                         <span class="subheading"><?php printf( esc_html__( 'You searched for: "%s"', 'cleanblog' ), '<span>' . get_search_query() . '</span>' ); ?></span>
                     </div>
-					<!-- /.site-heading -->
+		    <!-- /.site-heading -->
                 </div>
-				<!-- /.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1 -->
+		<!-- /.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1 -->
             </div>
-			<!-- /.row -->
+	<!-- /.row -->
         </div>
-		<!-- /.container -->
+	<!-- /.container -->
     </header>
 	
 	<?php } else { ?>
@@ -362,34 +362,31 @@ function cleanblog_header() { ?>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-						<?php if (get_theme_mod('cleanblog_homeintro_title') !='') { ?>
-						<h1 class="homeintro"><?php echo get_theme_mod( 'cleanblog_homeintro_title' ); ?></h1>
-						<?php } else { ?>
-                        <h1>Clean Blog</h1>
-						<?php } ?>
+			<?php if (get_theme_mod('cleanblog_homeintro_title') !='') { ?>
+			<h1 class="homeintro"><?php echo get_theme_mod( 'cleanblog_homeintro_title' ); ?></h1>
+			<?php } else { ?>
+                        <h1><?php esc_html_e( 'Clean Blog', 'cleanblog' ); ?></h1>
+			<?php } ?>
                         <hr class="small">
-						<?php if (get_theme_mod('cleanblog_homeintro_subtitle') !='') { ?>
+			<?php if (get_theme_mod('cleanblog_homeintro_subtitle') !='') { ?>
                         <span class="subheading"><?php echo get_theme_mod( 'cleanblog_homeintro_subtitle' ); ?></span>
-						<?php } else { ?>
-                        <span class="subheading">A Clean Blog Theme by Devio Digital</span>
-						<?php } ?>
+			<?php } else { ?>
+                        <span class="subheading"><?php esc_html_e( 'A Clean Blog Theme by Devio Digital', 'cleanblog' ); ?></span>
+			<?php } ?>
                     </div>
-					<!-- /.site-heading -->
+		    <!-- /.site-heading -->
                 </div>
-				<!-- /.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1 -->
+		<!-- /.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1 -->
             </div>
-			<!-- /.row -->
+	    <!-- /.row -->
         </div>
-		<!-- /.container -->
+	<!-- /.container -->
     </header>
 
 	<?php } ?>
 	
 <?php }
 endif;
-
-
-
 
 if ( ! function_exists( 'cleanblog_social' ) ) :
 /**
