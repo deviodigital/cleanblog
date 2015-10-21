@@ -256,6 +256,15 @@ hr.small {
     font-size: 36px;
   }
 }
+@media only screen and (max-width: 600px){
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"] {
+    max-width: 100%;
+  }
+}
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
