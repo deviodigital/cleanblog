@@ -398,8 +398,8 @@ hr {
 	margin-bottom: 1.5em;
 }
 
-ul,
-ol {
+div.col-lg-8 ul,
+div.col-lg-8 ol {
 	margin: 0 0 30px 30px !important;
 }
 
