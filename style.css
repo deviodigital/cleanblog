@@ -967,14 +967,34 @@ footer.comment-meta {
 	display: block;
 }
 
+.comment-metadata a, 
+.comment-metadata a:visited {
+	text-decoration: none;
+	color: #eee;
+}
+
+.comment-metadata a:hover {
+	color: #0085a1;
+}
+
 .comment-reply-link {
 	background: #eee;
 	font-size: 0.8em;
 	padding: 10px;
+	text-decoration: none;
+}
+
+.comment-reply-link:hover {
+	text-decoration: none;
 }
 
 img.avatar {
 	border-radius: 16px;
+}
+
+label#subscribe-label,
+label#subscribe-blog-label {
+	display: inline-block !important;
 }
 
 /*--------------------------------------------------------------
