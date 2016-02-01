@@ -6,6 +6,7 @@ body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
   color: #404040;
+  position: relative;
 }
 :focus {
   outline: none;
@@ -58,7 +59,7 @@ hr.small {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 999;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .navbar-custom .navbar-brand {
@@ -410,3 +411,11 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+
+/* SiteBuilder specific CSS styles */
+
+body.page-template-page-builder hr.footer {
+    display: none;
+}
+
+body.admin-bar .navbar-custom.is-fixed { top:-32px; }

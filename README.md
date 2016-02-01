@@ -3,8 +3,8 @@ Clean Blog
 **Contributors:** deviodigital  
 **Tags:** theme, templates  
 **Requires at least:** 3.4  
-**Tested up to:** 4.4.0  
-**Stable tag:** 1.0.6  
+**Tested up to:** 4.4.1  
+**Stable tag:** 1.0.7  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,7 @@ It works immediately on upload. Yet, I did want to give some options in the Cust
 
 ## Live Demo &amp; Release Notes
 
-You can view the theme in action on the [live demo](http://www.deviodigital.com/demo/cleanblog/)
+You can view the theme in action on my [personal blog](http://www.robertdevore.com/)
 
 Looking for more details behind the theme that aren't included in this readme doc? I've done a [write up](http://www.robertdevore.com/clean-blog-free-wordpress-theme) that breaks down why I decided to create this theme, and a more thorough breakdown of the theme options, and the road ahead.
 
@@ -50,6 +50,10 @@ Looking for more details behind the theme that aren't included in this readme do
 ![Theme Customizer options](http://www.robertdevore.com/wp-content/uploads/2015/08/customizer-options.jpg)
 
 ## Changelog
+
+### 1.0.7
+* added page-builder.php page template for [Page Builder by SiteOrigin](https://wordpress.org/plugins/siteorigin-panels/) plugin integration
+* minor CSS edits
 
 ### 1.0.6
 * updated theme language translation

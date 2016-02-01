@@ -299,6 +299,8 @@ function cleanblog_header() { ?>
         </div>
     </header>
 	
+	<?php } elseif ( is_page_template( 'page-builder.php' ) ) { ?>
+
 	<?php } elseif(is_page()) { ?>
 	
     <!-- Page Header -->

@@ -14,7 +14,7 @@
     </div>
 	<!-- /.container -->
 
-    <hr>
+    <hr class="footer">
 
     <!-- Footer -->
     <footer>
