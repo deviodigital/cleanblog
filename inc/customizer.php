@@ -31,6 +31,29 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 			)
 		)
 	);
+
+	/* Header Background Color */
+	$wp_customize->add_setting(
+		'cleanblog_header_background_color',
+		array(
+			'default'     		 => '#444',
+			'sanitize_callback'  => 'cleanblog_sanitize_input',
+			'transport'   		 => 'refresh'
+		)
+	);
+	$wp_customize->add_control(
+		new WP_Customize_Color_Control(
+			$wp_customize,
+			'header_background_color',
+			array(
+			    'label'      => 'Header Background Color',
+			    'section'    => 'colors',
+			    'settings'   => 'cleanblog_header_background_color'
+			)
+		)
+	);
+
+
 	/*-----------------------------------------------------------*
 	 * Defining our own 'Social Links' section
 	 *-----------------------------------------------------------*/
@@ -272,6 +295,28 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 			)
 		)
 	);
+	
+	/* Darken Header? */
+	$wp_customize->add_setting(
+		'cleanblog_darken_header',
+		array(
+			'default'   => 'no',
+			'sanitize_callback'  => 'cleanblog_sanitize_input',
+			'transport' => 'refresh'
+		)
+	);
+	$wp_customize->add_control(
+		'cleanblog_darken_header',
+		array(
+			'section'  => 'cleanblog_display_options',
+			'label'    => 'Darken Header?',
+			'type'     => 'radio',
+			'choices'  => array(
+				'no'    => 'No',
+				'yes'   => 'Yes'
+			)
+		)
+	);
 
 	/* Display Copyright */
 	$wp_customize->add_setting(
@@ -499,6 +544,34 @@ function cleanblog_customizer_css() {
 		.navbar-custom.is-fixed .nav li a:hover, .navbar-custom.is-fixed .nav li a:focus {
 			color: <?php echo get_theme_mod( 'cleanblog_link_color' ); ?>;
 		}
+		
+		<?php if ( get_theme_mod( 'cleanblog_darken_header' ) !== 'no' ) { ?>
+		body.admin-bar .navbar-custom.is-fixed { top:-32px; }
+
+		header.intro-header { position: relative; }
+
+		header.intro-header .row {
+		z-index: 3;
+		position: relative;
+		}
+
+		header.intro-header .container:after {
+		background: rgba(0,0,0,0.2);
+		z-index: 2;
+		content: '';
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		}
+
+		@media only screen and (min-width: 1170px)
+		.navbar-custom {
+		z-index: 9999;
+		}
+		<?php } ?>
 	</style>
 <?php
 } // end cleanblog_customizer_css

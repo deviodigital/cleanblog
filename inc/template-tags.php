@@ -283,7 +283,7 @@ function cleanblog_header() { ?>
 	<?php
 		$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 	?>
-    <header class="intro-header" style="background-color: #404040; background-image: url('<?php echo $feat_image; ?>')">
+    <header class="intro-header" style="background-color: <?php echo get_theme_mod( 'cleanblog_header_background_color' ); ?>; background-image: url('<?php echo $feat_image; ?>')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -308,7 +308,7 @@ function cleanblog_header() { ?>
 	<?php
 		$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 	?>
-    <header class="intro-header" style="background-color: #404040; background-image: url('<?php echo $feat_image; ?>')">
+    <header class="intro-header" style="background-color: <?php echo get_theme_mod( 'cleanblog_header_background_color' ); ?>; background-image: url('<?php echo $feat_image; ?>')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -332,7 +332,7 @@ function cleanblog_header() { ?>
 	
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-color: #404040;')">
+    <header class="intro-header" style="background-color: <?php echo get_theme_mod( 'cleanblog_header_background_color' ); ?>;')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -359,7 +359,7 @@ function cleanblog_header() { ?>
 	<?php } else { ?>
 	<?php $headerimg = get_template_directory_uri() . '/img/home-bg.jpg'; ?>
 	<?php } ?>
-    <header class="intro-header" style="background-color: #404040; background-image: url('<?php echo $headerimg; ?>')">
+    <header class="intro-header" style="background-color: <?php echo get_theme_mod( 'cleanblog_header_background_color' ); ?>; background-image: url('<?php echo $headerimg; ?>')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

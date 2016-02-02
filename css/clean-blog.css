@@ -417,5 +417,3 @@ body {
 body.page-template-page-builder hr.footer {
     display: none;
 }
-
-body.admin-bar .navbar-custom.is-fixed { top:-32px; }

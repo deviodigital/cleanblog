@@ -4,7 +4,7 @@ Clean Blog
 **Tags:** theme, templates  
 **Requires at least:** 3.4  
 **Tested up to:** 4.4.1  
-**Stable tag:** 1.0.7  
+**Stable tag:** 1.0.8  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,15 @@ Looking for more details behind the theme that aren't included in this readme do
 
 ## Screenshots
 
+5. Header Background Color
+![header background color](http://localhost/cleanblog/wp-content/uploads/2016/02/cleanblog-header-background-color.jpg)
+
+4. Darken Header? (no)
+![darken header no](http://localhost/cleanblog/wp-content/uploads/2016/02/cleanblog-darken-header-no.jpg)
+
+3. Darken Header? (yes)
+![darken header yes](http://localhost/cleanblog/wp-content/uploads/2016/02/cleanblog-darken-header-yes.jpg)
+
 2. Default theme design
 ![default theme design](http://www.robertdevore.com/wp-content/uploads/2015/08/customizer-home-intro.jpg)
 
@@ -51,9 +60,11 @@ Looking for more details behind the theme that aren't included in this readme do
 
 ## Changelog
 
+### 1.0.8
+* included options in Customizer: darken header background (yes/no), header background color picker (see screenshots)
+
 ### 1.0.7
 * added page-builder.php page template for [Page Builder by SiteOrigin](https://wordpress.org/plugins/siteorigin-panels/) plugin integration
-* minor CSS edits
 
 ### 1.0.6
 * updated theme language translation
