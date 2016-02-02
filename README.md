@@ -43,19 +43,24 @@ Looking for more details behind the theme that aren't included in this readme do
 
 ## Screenshots
 
-5. Header Background Color
+### Header Background Color
+
 ![header background color](http://www.robertdevore.com/wp-content/uploads/2016/02/cleanblog-header-background-color.jpg)
 
-4. Darken Header? (no)
+### Darken Header? (no)
+
 ![darken header no](http://www.robertdevore.com/wp-content/uploads/2016/02/cleanblog-darken-header-no.jpg)
 
-3. Darken Header? (yes)
+### Darken Header? (yes)
+
 ![darken header yes](http://www.robertdevore.com/wp-content/uploads/2016/02/cleanblog-darken-header-yes.jpg)
 
-2. Default theme design
+### Default theme design
+
 ![default theme design](http://www.robertdevore.com/wp-content/uploads/2015/08/customizer-home-intro.jpg)
 
-1. Theme Customizer options
+### Theme Customizer options
+
 ![Theme Customizer options](http://www.robertdevore.com/wp-content/uploads/2015/08/customizer-options.jpg)
 
 ## Changelog
