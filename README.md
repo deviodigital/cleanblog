@@ -3,8 +3,8 @@ Clean Blog
 **Contributors:** deviodigital  
 **Tags:** theme, templates  
 **Requires at least:** 3.4  
-**Tested up to:** 4.4.1  
-**Stable tag:** 1.0.8  
+**Tested up to:** 4.4.2  
+**Stable tag:** 1.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,33 +65,7 @@ Looking for more details behind the theme that aren't included in this readme do
 
 ## Changelog
 
-### 1.0.8
-* included options in Customizer: darken header background (yes/no), header background color picker (see screenshots)
-
-### 1.0.7
-* added page-builder.php page template for [Page Builder by SiteOrigin](https://wordpress.org/plugins/siteorigin-panels/) plugin integration
-
-### 1.0.6
-* updated theme language translation
-
-### 1.0.5
-* fixed 'Posted By' author not working outside of loop
-* removed the link from the date at the top of single posts
-
-### 1.0.4
-* fixed copyright input in the customizer from stripping html tags
-
-### 1.0.3
-* minor CSS edits
-
-### 1.0.2
-* added action hooks to various files for added customizability
-
-### 1.0.1
-* minor CSS edits
-
-### 1.0.0
-* Initial release
+View `CHANGELOG.MD` file
 
 ## Development Information
 
