@@ -8,6 +8,8 @@ Clean Blog
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
+![header](http://www.robertdevore.com/wp-content/uploads/2016/02/cleanblog-header.jpg)
+
 Personal blogging theme, free of clutter, with a focus on the writers words while not sacrificing visual quality.
 
 ## Description
