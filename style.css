@@ -409,6 +409,17 @@ div.col-lg-8 ol {
 
 .sow-slider-base ul.sow-slider-images {
     margin: 0 !important;
+	padding: 0 !important;
+}
+
+div.col-lg-8 ol.sow-slider-presentation {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.sow-slider-base .sow-slider-pagination {
+	left: auto;
+	right: 0;
 }
 
 ul {
@@ -978,7 +989,7 @@ footer.comment-meta {
 .comment-metadata a, 
 .comment-metadata a:visited {
 	text-decoration: none;
-	color: #eee;
+	color: #aaa;
 }
 
 .comment-metadata a:hover {
