@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.1.1
+* updated error in functions.php file which was causing white screen of death
+
 ### 1.1
 * included Github Updater integration for instant updates
 * moved Changelog to CHANGELOG.MD file
