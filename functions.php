@@ -167,4 +167,4 @@ add_filter( "the_excerpt", "add_class_to_excerpt" );
 /**
  * Require Github Updater plugin for theme update checks
  */
-require get_template_directory() . '/inc/install-github-updater.php' );
+require get_template_directory() . '/inc/install-github-updater.php';
