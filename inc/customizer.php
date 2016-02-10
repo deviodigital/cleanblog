@@ -318,6 +318,28 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 		)
 	);
 
+	/* Parallax Header? */
+	$wp_customize->add_setting(
+		'cleanblog_parallax_header',
+		array(
+			'default'   => 'no',
+			'sanitize_callback'  => 'cleanblog_sanitize_input',
+			'transport' => 'refresh'
+		)
+	);
+	$wp_customize->add_control(
+		'cleanblog_parallax_header',
+		array(
+			'section'  => 'cleanblog_display_options',
+			'label'    => 'Parallax Header?',
+			'type'     => 'radio',
+			'choices'  => array(
+				'no'    => 'No',
+				'yes'   => 'Yes'
+			)
+		)
+	);
+
 	/* Display Copyright */
 	$wp_customize->add_setting(
 		'cleanblog_footer_copyright_text',
@@ -570,6 +592,11 @@ function cleanblog_customizer_css() {
 		@media only screen and (min-width: 1170px)
 		.navbar-custom {
 		z-index: 9999;
+		}
+		<?php } ?>
+		<?php if ( get_theme_mod( 'cleanblog_parallax_header' ) !== 'no' ) { ?>
+		.intro-header {
+			background-attachment: fixed;
 		}
 		<?php } ?>
 	</style>
