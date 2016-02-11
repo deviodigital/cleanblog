@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.1.2
+* added option to Customizer to parallax your background images
+
 ### 1.1.1
 * updated error in functions.php file which was causing white screen of death
 
