@@ -412,8 +412,12 @@ body {
   webkit-tap-highlight-color: #0085a1;
 }
 
-/* SiteBuilder specific CSS styles */
+/** SiteBuilder specific CSS styles */
 
 body.page-template-page-builder hr.footer {
     display: none;
+}
+
+body.siteorigin-panels .intro-header {
+	margin-bottom: 0;
 }
