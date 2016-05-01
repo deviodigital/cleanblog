@@ -10,15 +10,17 @@ Clean Blog
 
 ![header](http://www.robertdevore.com/wp-content/uploads/2016/02/cleanblog-header.jpg)
 
-Personal blogging theme, free of clutter, with a focus on the writers words while not sacrificing visual quality.
+Personal blogging theme. Free of clutter with a focus on the writers words, all while not sacrificing visual quality.
 
 ## Description
 
 Clean Blog is a WordPress theme with no sidebar, no excess clutter, easy to read content and a bold featured image to instantly grab your readers attention.
 
-The beauty is in it's mininmalism. No exhaustive set of features to customize before being able to write.
+The beauty is in it's mininmalism.
 
-It works immediately on upload. Yet, I did want to give some options in the Customizer that would allow you to make the theme uniquely your own.
+No exhaustive set of features to customize before being able to write. It works immediately on upload.
+
+Yet, I did want to give some options in the Customizer that would allow you to make the theme uniquely your own.
 
 **Recommended:** Download and use the [Clean Blog child theme](https://github.com/deviodigital/cleanblog-child) when customizing your website, so you can keep the main *Clean Blog* theme up-to-date without overriding your edits.
 
@@ -67,7 +69,7 @@ Looking for more details behind the theme that aren't included in this readme do
 
 ## Changelog
 
-View `CHANGELOG.MD` file
+View [CHANGELOG.MD](https://github.com/deviodigital/cleanblog/blob/master/CHANGELOG.md) file
 
 ## Development Information
 
