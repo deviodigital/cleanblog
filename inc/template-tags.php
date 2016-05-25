@@ -68,7 +68,7 @@ function cleanblog_posted_on() {
 	if (is_singular()) {
 		$author_id = get_queried_object()->post_author;
 	}
-	
+
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -91,9 +91,9 @@ function cleanblog_posted_on() {
 		esc_attr( sprintf( __( 'View all posts by %s', 'cleanblog' ), get_the_author_meta("display_name", $author_id) ) ),
 		get_the_author_meta("display_name", $author_id)
 	);
-	
+
 	$byline = sprintf(
-		esc_html_x( 'Posted by %s', 'posted by', 'cleanblog' ), 
+		esc_html_x( 'Posted by %s', 'posted by', 'cleanblog' ),
 		$byauthor
 	);
 
@@ -277,7 +277,7 @@ if ( ! function_exists( 'cleanblog_header' ) ) :
 function cleanblog_header() { ?>
 
 	<?php if( is_single() ) { ?>
-	
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
 	<?php
@@ -298,11 +298,11 @@ function cleanblog_header() { ?>
             </div>
         </div>
     </header>
-	
+
 	<?php } elseif ( is_page_template( 'page-builder.php' ) ) { ?>
 
 	<?php } elseif ( is_page() ) { ?>
-	
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
 	<?php
@@ -327,9 +327,9 @@ function cleanblog_header() { ?>
         </div>
 		<!-- /.container -->
     </header>
-	
+
 	<?php } elseif( is_search() ) { ?>
-	
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <header class="intro-header" style="background-color: <?php echo get_theme_mod( 'cleanblog_header_background_color' ); ?>;')">
@@ -349,9 +349,9 @@ function cleanblog_header() { ?>
         </div>
 	<!-- /.container -->
     </header>
-	
+
 	<?php } else { ?>
-	
+
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
 	<?php if ( get_theme_mod('cleanblog_homeintro_image') !='' ) { ?>
@@ -386,7 +386,7 @@ function cleanblog_header() { ?>
     </header>
 
 	<?php } ?>
-	
+
 <?php }
 endif;
 
@@ -497,7 +497,7 @@ function cleanblog_social() { ?>
 			</a>
 		</li>
 		<?php } ?>
-		<?php if ( get_theme_mod( 'cleanblog_social_youtbe' ) !='' ) { ?>
+		<?php if ( get_theme_mod( 'cleanblog_social_youtube' ) !='' ) { ?>
 		<li id="social-youtube">
 			<a href="<?php echo get_theme_mod( 'cleanblog_social_youtube' ); ?>" target="_blank">
 				<span class="fa-stack fa-lg">
