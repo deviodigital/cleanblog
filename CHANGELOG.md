@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.1.3
+* fixed YouTube social link not appearing when URL is entered in theme customizer
+
 ### 1.1.2
 * added option to Customizer to parallax your background images
 

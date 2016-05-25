@@ -4,7 +4,7 @@ Theme URI: http://www.robertdevore.com/clean-blog-free-wordpress-theme/
 Author: Devio Digital
 Author URI: http://www.deviodigital.com
 Description: Personal blogging theme, free of clutter, with a focus on the writers words while not sacrificing visual quality.
-Version: 1.1.2
+Version: 1.1.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cleanblog
@@ -747,7 +747,7 @@ a:active {
 }
 
 
-@media screen and (max-width: 767px) {	
+@media screen and (max-width: 767px) {
 	.navbar-custom .nav li {
 		float: left;
 		width: 100%;
@@ -767,7 +767,7 @@ a:active {
 	.navbar-custom .nav ul a {
 		padding: 10px 15px;
 	}
-	
+
 	.navbar-custom .nav ul li ul {
 		left: 0;
 	}
@@ -986,7 +986,7 @@ footer.comment-meta {
 	display: block;
 }
 
-.comment-metadata a, 
+.comment-metadata a,
 .comment-metadata a:visited {
 	text-decoration: none;
 	color: #aaa;
