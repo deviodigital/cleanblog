@@ -405,7 +405,7 @@ div.col-lg-8 ol {
 	margin: 0 0 30px 30px !important;
 }
 
-/* Override main ul styling for page builder*/
+/* Override main ul styling for page builder */
 
 .sow-slider-base ul.sow-slider-images {
     margin: 0 !important;
@@ -420,6 +420,12 @@ div.col-lg-8 ol.sow-slider-presentation {
 .sow-slider-base .sow-slider-pagination {
 	left: auto;
 	right: 0;
+}
+
+/* Override styling for footer social links */
+
+ul.list-inline.text-center {
+    margin: 0 0 30px 0 !important;
 }
 
 ul {
