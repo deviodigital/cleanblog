@@ -17,59 +17,24 @@
 	});
 
 	/* Social icons */
-	wp.customize( 'cleanblog_social_twitter', function( value ) {
-		value.bind( function( to ) {
-			$( '#social-twitter' ).text( to );
-		});
-	});
-	wp.customize( 'cleanblog_social_facebook', function( value ) {
-		value.bind( function( to ) {
-			$( '#social-facebook' ).text( to );
-		});
-	});
-	wp.customize( 'cleanblog_social_google', function( value ) {
-		value.bind( function( to ) {
-			$( '#social-google' ).text( to );
-		});
-	});
-	wp.customize( 'cleanblog_social_pinterest', function( value ) {
-		value.bind( function( to ) {
-			$( '#social-pinterest' ).text( to );
-		});
-	});
-	wp.customize( 'cleanblog_social_linkedin', function( value ) {
-		value.bind( function( to ) {
-			$( '#social-linkedin' ).text( to );
-		});
-	});
-	wp.customize( 'cleanblog_social_github', function( value ) {
-		value.bind( function( to ) {
-			$( '#social-github' ).text( to );
-		});
-	});
-	wp.customize( 'cleanblog_social_instagram', function( value ) {
-		value.bind( function( to ) {
-			$( '#social-instagram' ).text( to );
-		});
-	});
-	wp.customize( 'cleanblog_social_medium', function( value ) {
-		value.bind( function( to ) {
-			$( '#social-medium' ).text( to );
-		});
-	});
-	wp.customize( 'cleanblog_social_vine', function( value ) {
-		value.bind( function( to ) {
-			$( '#social-vine' ).text( to );
-		});
-	});
-	wp.customize( 'cleanblog_social_tumblr', function( value ) {
-		value.bind( function( to ) {
-			$( '#social-tumblr' ).text( to );
-		});
-	});
-	wp.customize( 'cleanblog_social_youtube', function( value ) {
-		value.bind( function( to ) {
-			$( '#social-youtube' ).text( to );
+	var socialNetworks = [
+		'titter',
+		'facebook',
+		'google',
+		'pinterest',
+		'linkedin',
+		'github',
+		'instagram',
+		'medium',
+		'vine',
+		'tumblr',
+		'youtube',
+	];
+	socialNetworks.forEach(function (network) {
+		wp.customize('cleanblog_social_' + network, function (value) {
+			value.bind(function (to) {
+				$('#social-' + network).text(to);
+			});
 		});
 	});
 
@@ -96,9 +61,9 @@
 			$( 'p.copyright' ).text( to );
 		});
 	});
-	
+
 	/* Home intro */
-	
+
 	wp.customize( 'cleanblog_homeintro_image', function( value ) {
 		value.bind( function( to ) {
 
@@ -114,11 +79,11 @@
 			$( 'h1.homeintro' ).text( to );
 		});
 	});
-	
+
 	wp.customize( 'cleanblog_homeintro_subtitle', function( value ) {
 		value.bind( function( to ) {
 			$( 'span.subheading' ).text( to );
 		});
 	});
-	
+
 })( jQuery );

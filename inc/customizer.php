@@ -1,6 +1,56 @@
 <?php
 
 /**
+ * Registers a selection of social network links with the theme customizer
+ *
+ * @param      object    $wp_customize    The WordPress Theme Customizer
+ */
+function cleanblog_register_social_links( $wp_customize ) {
+	$social_networks = array(
+		'Twitter',
+		'Facebook',
+		'Google+',
+		'Pinterest',
+		'LinkedIn',
+		'GitHub',
+		'Instagram',
+		'Medium',
+		'Vine',
+		'Tumblr',
+		'YouTube',
+	);
+
+	$wp_customize->add_section(
+		'cleanblog_social_links',
+		array(
+			'title'     => 'Social Links',
+			'priority'  => 30
+		)
+	);
+
+	foreach ( $social_networks as $network ) {
+		$link_class = 'cleanblog_social_'.preg_replace( '[^a-z]', '', strtolower( $network ) );
+
+		$wp_customize->add_setting(
+			$link_class,
+			array(
+				'default'            => '',
+				'sanitize_callback'  => 'cleanblog_sanitize_input',
+				'transport'          => 'refresh'
+			)
+		);
+		$wp_customize->add_control(
+			$link_class,
+			array(
+				'section'  => 'cleanblog_social_links',
+				'label'    => $network,
+				'type'     => 'text'
+			)
+		);
+	}
+}
+
+/**
  * Registers options with the Theme Customizer
  *
  * @param      object    $wp_customize    The WordPress Theme Customizer
@@ -8,9 +58,7 @@
  * @since      1.0.0
  * @version    1.0.0
  */
-
 function cleanblog_register_theme_customizer( $wp_customize ) {
-
 	/* Link Color */
 	$wp_customize->add_setting(
 		'cleanblog_link_color',
@@ -57,211 +105,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	/*-----------------------------------------------------------*
 	 * Defining our own 'Social Links' section
 	 *-----------------------------------------------------------*/
-	$wp_customize->add_section(
-		'cleanblog_social_links',
-		array(
-			'title'     => 'Social Links',
-			'priority'  => 30
-		)
-	);
-
-	/* Twitter URL */
-	$wp_customize->add_setting(
-		'cleanblog_social_twitter',
-		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
-		)
-	);
-	$wp_customize->add_control(
-		'cleanblog_social_twitter',
-		array(
-			'section'  => 'cleanblog_social_links',
-			'label'    => 'Twitter',
-			'type'     => 'text'
-		)
-	);
-
-	/* Facebook URL */
-	$wp_customize->add_setting(
-		'cleanblog_social_facebook',
-		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
-		)
-	);
-	$wp_customize->add_control(
-		'cleanblog_social_facebook',
-		array(
-			'section'  => 'cleanblog_social_links',
-			'label'    => 'Facebook',
-			'type'     => 'text'
-		)
-	);
-
-	/* Google URL */
-	$wp_customize->add_setting(
-		'cleanblog_social_google',
-		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
-		)
-	);
-	$wp_customize->add_control(
-		'cleanblog_social_google',
-		array(
-			'section'  => 'cleanblog_social_links',
-			'label'    => 'Google+',
-			'type'     => 'text'
-		)
-	);
-
-	/* Pinterest URL */
-	$wp_customize->add_setting(
-		'cleanblog_social_pinterest',
-		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
-		)
-	);
-	$wp_customize->add_control(
-		'cleanblog_social_pinterest',
-		array(
-			'section'  => 'cleanblog_social_links',
-			'label'    => 'Pinterest',
-			'type'     => 'text'
-		)
-	);
-
-	/* Linkedin URL */
-	$wp_customize->add_setting(
-		'cleanblog_social_linkedin',
-		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
-		)
-	);
-	$wp_customize->add_control(
-		'cleanblog_social_linkedin',
-		array(
-			'section'  => 'cleanblog_social_links',
-			'label'    => 'Linkedin',
-			'type'     => 'text'
-		)
-	);
-
-	/* Github URL */
-	$wp_customize->add_setting(
-		'cleanblog_social_github',
-		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
-		)
-	);
-	$wp_customize->add_control(
-		'cleanblog_social_github',
-		array(
-			'section'  => 'cleanblog_social_links',
-			'label'    => 'Github',
-			'type'     => 'text'
-		)
-	);
-
-	/* Instagram URL */
-	$wp_customize->add_setting(
-		'cleanblog_social_instagram',
-		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
-		)
-	);
-	$wp_customize->add_control(
-		'cleanblog_social_instagram',
-		array(
-			'section'  => 'cleanblog_social_links',
-			'label'    => 'Instagram',
-			'type'     => 'text'
-		)
-	);
-
-	/* Medium URL */
-	$wp_customize->add_setting(
-		'cleanblog_social_medium',
-		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
-		)
-	);
-	$wp_customize->add_control(
-		'cleanblog_social_medium',
-		array(
-			'section'  => 'cleanblog_social_links',
-			'label'    => 'Medium',
-			'type'     => 'text'
-		)
-	);
-
-	/* Vine URL */
-	$wp_customize->add_setting(
-		'cleanblog_social_vine',
-		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
-		)
-	);
-	$wp_customize->add_control(
-		'cleanblog_social_vine',
-		array(
-			'section'  => 'cleanblog_social_links',
-			'label'    => 'Vine',
-			'type'     => 'text'
-		)
-	);
-
-	/* Tumblr URL */
-	$wp_customize->add_setting(
-		'cleanblog_social_tumblr',
-		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
-		)
-	);
-	$wp_customize->add_control(
-		'cleanblog_social_tumblr',
-		array(
-			'section'  => 'cleanblog_social_links',
-			'label'    => 'Tumblr',
-			'type'     => 'text'
-		)
-	);
-
-	/* YouTube URL */
-	$wp_customize->add_setting(
-		'cleanblog_social_youtube',
-		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
-		)
-	);
-	$wp_customize->add_control(
-		'cleanblog_social_youtube',
-		array(
-			'section'  => 'cleanblog_social_links',
-			'label'    => 'YouTube',
-			'type'     => 'text'
-		)
-	);
+	cleanblog_register_social_links( $wp_customize );
 
 	/*-----------------------------------------------------------*
 	 * Defining our own 'Display Options' section
@@ -427,6 +271,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	);
 
 } // end cleanblog_register_theme_customizer
+
 add_action( 'customize_register', 'cleanblog_register_theme_customizer' );
 /**
  * Sanitizes the incoming input and returns it prior to serialization.
