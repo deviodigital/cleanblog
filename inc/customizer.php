@@ -14,6 +14,7 @@ function cleanblog_register_social_links( $wp_customize ) {
 		'LinkedIn',
 		'GitHub',
 		'Instagram',
+		'Flickr',
 		'Medium',
 		'Vine',
 		'Tumblr',

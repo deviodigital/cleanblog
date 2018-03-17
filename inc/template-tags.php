@@ -403,6 +403,7 @@ function cleanblog_social() {
 		'linkedin',
 		'github',
 		'instagram',
+		'flickr',
 		'medium',
 		'vine',
 		'tumblr',
