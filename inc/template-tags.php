@@ -373,7 +373,7 @@ function cleanblog_header() { ?>
 			<?php if (get_theme_mod('cleanblog_homeintro_subtitle') !='') { ?>
                         <span class="subheading"><?php echo get_theme_mod( 'cleanblog_homeintro_subtitle' ); ?></span>
 			<?php } else { ?>
-                        <span class="subheading"><?php esc_html_e( 'A Clean Blog Theme by Devio Digital', 'cleanblog' ); ?></span>
+                        <span class="subheading"><?php esc_html_e( 'A Clean Blog Theme by Robert DeVore', 'cleanblog' ); ?></span>
 			<?php } ?>
                     </div>
 		    <!-- /.site-heading -->

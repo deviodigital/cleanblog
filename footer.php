@@ -26,7 +26,7 @@
 				<?php if (get_theme_mod( 'cleanblog_footer_copyright_text' ) !='') { ?>
 					<p class="copyright text-muted"><?php echo get_theme_mod( 'cleanblog_footer_copyright_text' ); ?></p>
 				<?php } else { ?>
-                    <p class="copyright text-muted"><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cleanblog' ) ); ?>" target="_blank"><?php printf( esc_html__( 'Powered by %s', 'cleanblog' ), 'WordPress' ); ?></a> &middot; <?php printf( esc_html__( '%1$s by %2$s.', 'cleanblog' ), 'Clean Blog theme', '<a href="http://www.deviodigital.com" rel="designer" target="_blank">Devio Digital</a>' ); ?></p>
+                    <p class="copyright text-muted"><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cleanblog' ) ); ?>" target="_blank"><?php printf( esc_html__( 'Powered by %s', 'cleanblog' ), 'WordPress' ); ?></a> &middot; <?php printf( esc_html__( '%1$s by %2$s.', 'cleanblog' ), 'Clean Blog theme', '<a href="http://www.robertdevore.com" rel="designer" target="_blank">Robert DeVore</a>' ); ?></p>
 				<?php } ?>
 				<?php do_action('cleanblog_footer_bottom'); ?>
                 </div>
