@@ -160,7 +160,7 @@ add_filter( 'excerpt_more', 'custom_excerpt_more' );
 
 // Add a class to the <p> wrap around the excerpt
 function add_class_to_excerpt( $excerpt ) {
-    return str_replace('<p', '<p class="excerpt"', $excerpt);
+    return str_replace( '<p', '<p class="excerpt"', $excerpt );
 }
 add_filter( "the_excerpt", "add_class_to_excerpt" );
 
