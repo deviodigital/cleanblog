@@ -1,5 +1,12 @@
 # Changelog
 
+### 1.1.4
+* Add flickr social link into Customizer options and footer icon output
+* Updated CSS style for footer social links
+* Updated to use loops to generate social links in Customizer and Footer (thanks [@flakeparadigm](https://www.github.com/flakeparadigm))
+* Updated default header box subtitle, removing "Devio Digital" and adding "Robert DeVore"
+* Updated footer copyright link, removing [Devio Digital](http://www.deviodigital.com) and adding [Robert DeVore](http://www.robertdevore.com)
+
 ### 1.1.3
 * fixed YouTube social link not appearing when URL is entered in theme customizer
 
