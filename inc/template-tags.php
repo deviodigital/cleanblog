@@ -64,7 +64,7 @@ if ( ! function_exists( 'cleanblog_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function cleanblog_posted_on() {
-	$author_id;
+	$author_id = '';
 	if (is_singular()) {
 		$author_id = get_queried_object()->post_author;
 	}
@@ -274,7 +274,9 @@ if ( ! function_exists( 'cleanblog_header' ) ) :
 /**
  * Custom header codes for the home page, single posts and pages
  */
-function cleanblog_header() { ?>
+function cleanblog_header() {
+	global $post;
+?>
 
 	<?php if( is_single() ) { ?>
 
