@@ -86,10 +86,10 @@ function cleanblog_posted_on() {
 		$time_string
 	);
 
-	$byauthor = sprintf('<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
-		esc_url( get_author_posts_url( get_the_author_meta('ID', $author_id) ) ),
-		esc_attr( sprintf( __( 'View all posts by %s', 'cleanblog' ), get_the_author_meta("display_name", $author_id) ) ),
-		get_the_author_meta("display_name", $author_id)
+	$byauthor = sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+		esc_url( get_author_posts_url( get_the_author_meta( 'ID', $author_id ) ) ),
+		esc_attr( sprintf( __( 'View all posts by %s', 'cleanblog' ), get_the_author_meta( "display_name", $author_id ) ) ),
+		get_the_author_meta( "display_name", $author_id )
 	);
 
 	$byline = sprintf(
