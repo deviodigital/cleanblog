@@ -283,7 +283,7 @@ function cleanblog_header() {
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
 	<?php
-		$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+		$feat_image = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 	?>
     <header class="intro-header" style="background-color: <?php echo get_theme_mod( 'cleanblog_header_background_color' ); ?>; background-image: url('<?php echo $feat_image; ?>')">
         <div class="container">
@@ -291,9 +291,9 @@ function cleanblog_header() {
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
                         <h1><?php single_post_title(); ?></h1>
-			<?php if ( function_exists( 'the_subtitle' ) ) {
-				the_subtitle( '<h2 class="subheading">', '</h2>' );
-			} ?>
+							<?php if ( function_exists( 'the_subtitle' ) ) {
+								the_subtitle( '<h2 class="subheading">', '</h2>' );
+							} ?>
                         <span class="meta"><?php cleanblog_posted_on(); ?></span>
                     </div>
                 </div>
