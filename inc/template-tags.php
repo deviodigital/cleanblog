@@ -416,12 +416,11 @@ function cleanblog_social() {
 		<?php foreach ( $social_networks as $network ) {
 			if ( get_theme_mod( 'cleanblog_social_'.$network ) !='' ) { ?>
 				<li id="social-<?php echo $network; ?>">
-					<a href="<?php echo get_theme_mod( 'cleanblog_social_'.$network ); ?>" target="_blank">
-						<span class="fa-stack fa-lg">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-<?php echo $network; ?> fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
+					<div class="fa-2x">
+						<a href="<?php echo get_theme_mod( 'cleanblog_social_'.$network ); ?>" target="_blank">
+  						<i class="fab fa-<?php echo $network; ?>"></i>
+						</a>
+					</div>
 				</li>
 			<?php }
 		} ?>
