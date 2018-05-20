@@ -24,8 +24,8 @@ function cleanblog_register_social_links( $wp_customize ) {
 	$wp_customize->add_section(
 		'cleanblog_social_links',
 		array(
-			'title'     => 'Social Links',
-			'priority'  => 30
+			'title'    => 'Social Links',
+			'priority' => 30
 		)
 	);
 
@@ -35,17 +35,17 @@ function cleanblog_register_social_links( $wp_customize ) {
 		$wp_customize->add_setting(
 			$link_class,
 			array(
-				'default'            => '',
-				'sanitize_callback'  => 'cleanblog_sanitize_input',
-				'transport'          => 'refresh'
+				'default'           => '',
+				'sanitize_callback' => 'cleanblog_sanitize_input',
+				'transport'         => 'refresh'
 			)
 		);
 		$wp_customize->add_control(
 			$link_class,
 			array(
-				'section'  => 'cleanblog_social_links',
-				'label'    => $network,
-				'type'     => 'text'
+				'section' => 'cleanblog_social_links',
+				'label'   => $network,
+				'type'    => 'text'
 			)
 		);
 	}
@@ -64,9 +64,9 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'cleanblog_link_color',
 		array(
-			'default'     		 => '#0085a1',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'   		 => 'refresh'
+			'default'           => '#0085a1',
+			'sanitize_callback' => 'cleanblog_sanitize_input',
+			'transport'         => 'refresh'
 		)
 	);
 	$wp_customize->add_control(
@@ -74,9 +74,9 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 			$wp_customize,
 			'link_color',
 			array(
-			    'label'      => 'Link Color',
-			    'section'    => 'colors',
-			    'settings'   => 'cleanblog_link_color'
+			    'label'    => 'Link Color',
+			    'section'  => 'colors',
+			    'settings' => 'cleanblog_link_color'
 			)
 		)
 	);
@@ -85,9 +85,9 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'cleanblog_header_background_color',
 		array(
-			'default'     		 => '#444',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'   		 => 'refresh'
+			'default'           => '#444',
+			'sanitize_callback' => 'cleanblog_sanitize_input',
+			'transport'         => 'refresh'
 		)
 	);
 	$wp_customize->add_control(
@@ -95,9 +95,9 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 			$wp_customize,
 			'header_background_color',
 			array(
-			    'label'      => 'Header Background Color',
-			    'section'    => 'colors',
-			    'settings'   => 'cleanblog_header_background_color'
+			    'label'    => 'Header Background Color',
+			    'section'  => 'colors',
+			    'settings' => 'cleanblog_header_background_color'
 			)
 		)
 	);
@@ -114,8 +114,8 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'cleanblog_display_options',
 		array(
-			'title'     => __( 'Display Options', 'cleanblog' ),
-			'priority'  => 40
+			'title'    => __( 'Display Options', 'cleanblog' ),
+			'priority' => 40
 		)
 	);
 
@@ -123,20 +123,20 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'cleanblog_post_excerpt',
 		array(
-			'default'   => 'hide',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport' => 'refresh'
+			'default'           => 'hide',
+			'sanitize_callback' => 'cleanblog_sanitize_input',
+			'transport'         => 'refresh'
 		)
 	);
 	$wp_customize->add_control(
 		'cleanblog_post_excerpt',
 		array(
-			'section'  => 'cleanblog_display_options',
-			'label'    => __( 'Post Excerpts', 'cleanblog' ),
-			'type'     => 'radio',
-			'choices'  => array(
-				'hide'    => 'Hide',
-				'show'   => 'Show'
+			'section' => 'cleanblog_display_options',
+			'label'   => __( 'Post Excerpts', 'cleanblog' ),
+			'type'    => 'radio',
+			'choices' => array(
+				'hide' => 'Hide',
+				'show' => 'Show'
 			)
 		)
 	);
@@ -145,20 +145,20 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'cleanblog_darken_header',
 		array(
-			'default'   => 'no',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport' => 'refresh'
+			'default'           => 'no',
+			'sanitize_callback' => 'cleanblog_sanitize_input',
+			'transport'         => 'refresh'
 		)
 	);
 	$wp_customize->add_control(
 		'cleanblog_darken_header',
 		array(
-			'section'  => 'cleanblog_display_options',
-			'label'    => __( 'Darken Header?', 'cleanblog' ),
-			'type'     => 'radio',
-			'choices'  => array(
-				'no'    => 'No',
-				'yes'   => 'Yes'
+			'section' => 'cleanblog_display_options',
+			'label'   => __( 'Darken Header?', 'cleanblog' ),
+			'type'    => 'radio',
+			'choices' => array(
+				'no'  => 'No',
+				'yes' => 'Yes'
 			)
 		)
 	);
@@ -167,20 +167,20 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'cleanblog_parallax_header',
 		array(
-			'default'   => 'no',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport' => 'refresh'
+			'default'           => 'no',
+			'sanitize_callback' => 'cleanblog_sanitize_input',
+			'transport'         => 'refresh'
 		)
 	);
 	$wp_customize->add_control(
 		'cleanblog_parallax_header',
 		array(
-			'section'  => 'cleanblog_display_options',
-			'label'    => __( 'Parallax Header', 'cleanblog' ),
-			'type'     => 'radio',
-			'choices'  => array(
-				'no'    => 'No',
-				'yes'   => 'Yes'
+			'section' => 'cleanblog_display_options',
+			'label'   => __( 'Parallax Header', 'cleanblog' ),
+			'type'    => 'radio',
+			'choices' => array(
+				'no'  => 'No',
+				'yes' => 'Yes'
 			)
 		)
 	);
@@ -197,9 +197,9 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'cleanblog_footer_copyright_text',
 		array(
-			'section'  => 'cleanblog_display_options',
-			'label'    => __( 'Copyright Message', 'cleanblog' ),
-			'type'     => 'text'
+			'section' => 'cleanblog_display_options',
+			'label'   => __( 'Copyright Message', 'cleanblog' ),
+			'type'    => 'text'
 		)
 	);
 
@@ -209,8 +209,8 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'cleanblog_homeintro_options',
 		array(
-			'title'     => __( 'Home Intro', 'cleanblog' ),
-			'priority'  => 20
+			'title'    => __( 'Home Intro', 'cleanblog' ),
+			'priority' => 20
 		)
 	);
 
@@ -218,9 +218,9 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'cleanblog_homeintro_image',
 		array(
-		    'default'     		 => get_template_directory_uri() . '/img/home-bg.jpg',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-		    'transport'   		 => 'refresh'
+			'default'           => get_template_directory_uri() . '/img/home-bg.jpg',
+			'sanitize_callback' => 'cleanblog_sanitize_input',
+			'transport'         => 'refresh'
 		)
 	);
 	$wp_customize->add_control(
@@ -239,17 +239,17 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'cleanblog_homeintro_title',
 		array(
-			'default'            => '',
-			'sanitize_callback'  => 'cleanblog_sanitize_input',
-			'transport'          => 'refresh'
+			'default'           => '',
+			'sanitize_callback' => 'cleanblog_sanitize_input',
+			'transport'         => 'refresh'
 		)
 	);
 	$wp_customize->add_control(
 		'cleanblog_homeintro_title',
 		array(
-			'section'  => 'cleanblog_homeintro_options',
-			'label'    => __( 'Title', 'cleanblog' ),
-			'type'     => 'text'
+			'section' => 'cleanblog_homeintro_options',
+			'label'   => __( 'Title', 'cleanblog' ),
+			'type'    => 'text'
 		)
 	);
 
@@ -265,9 +265,9 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'cleanblog_homeintro_subtitle',
 		array(
-			'section'  => 'cleanblog_homeintro_options',
-			'label'    => __( 'Subtitle', 'cleanblog' ),
-			'type'     => 'text'
+			'section' => 'cleanblog_homeintro_options',
+			'label'   => __( 'Subtitle', 'cleanblog' ),
+			'type'    => 'text'
 		)
 	);
 
@@ -289,66 +289,66 @@ function cleanblog_sanitize_input( $input ) {
 
 function cleanblog_sanitize_copyright( $input ) {
 	$allowed = array(
-		's'			=> array(),
-		'br'		=> array(),
-		'em'		=> array(),
-		'i'			=> array(),
-		'strong'	=> array(),
-		'b'			=> array(),
-		'a'			=> array(
-			'href'			=> array(),
-			'title'			=> array(),
-			'class'			=> array(),
-			'id'			=> array(),
-			'style'			=> array(),
+		's'      => array(),
+		'br'     => array(),
+		'em'     => array(),
+		'i'      => array(),
+		'strong' => array(),
+		'b'      => array(),
+		'a'      => array(
+			'href'  => array(),
+			'title' => array(),
+			'class' => array(),
+			'id'    => array(),
+			'style' => array(),
 		),
-		'form'		=> array(
-			'id'			=> array(),
-			'class'			=> array(),
-			'action'		=> array(),
-			'method'		=> array(),
-			'autocomplete'	=> array(),
-			'style'			=> array(),
+		'form'           => array(
+			'id'           => array(),
+			'class'        => array(),
+			'action'       => array(),
+			'method'       => array(),
+			'autocomplete' => array(),
+			'style'			   => array(),
 		),
-		'input'		=> array(
-			'type'			=> array(),
-			'name'			=> array(),
-			'class' 		=> array(),
-			'id'			=> array(),
-			'value'			=> array(),
+		'input' => array(
+			'type'        => array(),
+			'name'        => array(),
+			'class'       => array(),
+			'id'          => array(),
+			'value'       => array(),
 			'placeholder'	=> array(),
 			'tabindex'		=> array(),
-			'style'			=> array(),
+			'style'       => array(),
 		),
-		'img'		=> array(
-			'src'			=> array(),
-			'alt'			=> array(),
-			'class'			=> array(),
-			'id'			=> array(),
-			'style'			=> array(),
-			'height'		=> array(),
-			'width'			=> array(),
+		'img' => array(
+			'src'    => array(),
+			'alt'    => array(),
+			'class'  => array(),
+			'id'     => array(),
+			'style'  => array(),
+			'height' => array(),
+			'width'  => array(),
 		),
-		'span'		=> array(
-			'class'			=> array(),
-			'id'			=> array(),
-			'style'			=> array(),
+		'span' => array(
+			'class' => array(),
+			'id'    => array(),
+			'style' => array(),
 		),
-		'p'			=> array(
-			'class'			=> array(),
-			'id'			=> array(),
-			'style'			=> array(),
+		'p' => array(
+			'class' => array(),
+			'id'    => array(),
+			'style' => array(),
 		),
-		'div'		=> array(
-			'class'			=> array(),
-			'id'			=> array(),
-			'style'			=> array(),
+		'div' => array(
+			'class' => array(),
+			'id'    => array(),
+			'style' => array(),
 		),
 		'blockquote' => array(
-			'cite'			=> array(),
-			'class'			=> array(),
-			'id'			=> array(),
-			'style'			=> array(),
+			'cite'  => array(),
+			'class' => array(),
+			'id'    => array(),
+			'style' => array(),
 		),
 	);
     return wp_kses( $input, $allowed );

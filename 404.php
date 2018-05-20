@@ -45,7 +45,7 @@ get_header(); ?>
 
 			<?php do_action('cleanblog_404_bottom'); ?>
 
-	</div>
-	<!-- /.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1 -->
+		</div>
+		<!-- /.col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1 -->
 
 <?php get_footer(); ?>
