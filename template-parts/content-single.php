@@ -7,6 +7,10 @@
 
 ?>
 
-<?php the_content(); ?>
+<?php
 
-<?php wp_link_pages(); ?>
+the_content();
+
+wp_link_pages();
+
+?>
