@@ -114,7 +114,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'cleanblog_display_options',
 		array(
-			'title'     => 'Display Options',
+			'title'     => __( 'Display Options', 'cleanblog' ),
 			'priority'  => 40
 		)
 	);
@@ -132,7 +132,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 		'cleanblog_post_excerpt',
 		array(
 			'section'  => 'cleanblog_display_options',
-			'label'    => 'Post Excerpts',
+			'label'    => __( 'Post Excerpts', 'cleanblog' ),
 			'type'     => 'radio',
 			'choices'  => array(
 				'hide'    => 'Hide',
@@ -154,7 +154,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 		'cleanblog_darken_header',
 		array(
 			'section'  => 'cleanblog_display_options',
-			'label'    => 'Darken Header?',
+			'label'    => __( 'Darken Header?', 'cleanblog' ),
 			'type'     => 'radio',
 			'choices'  => array(
 				'no'    => 'No',
@@ -176,7 +176,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 		'cleanblog_parallax_header',
 		array(
 			'section'  => 'cleanblog_display_options',
-			'label'    => 'Parallax Header?',
+			'label'    => __( 'Parallax Header', 'cleanblog' ),
 			'type'     => 'radio',
 			'choices'  => array(
 				'no'    => 'No',
@@ -198,7 +198,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 		'cleanblog_footer_copyright_text',
 		array(
 			'section'  => 'cleanblog_display_options',
-			'label'    => 'Copyright Message',
+			'label'    => __( 'Copyright Message', 'cleanblog' ),
 			'type'     => 'text'
 		)
 	);
@@ -209,7 +209,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'cleanblog_homeintro_options',
 		array(
-			'title'     => 'Home Intro',
+			'title'     => __( 'Home Intro', 'cleanblog' ),
 			'priority'  => 20
 		)
 	);
@@ -228,7 +228,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 			$wp_customize,
 			'cleanblog_homeintro_image',
 			array(
-			    'label'    => 'Background Image',
+			    'label'    => __( 'Background Image', 'cleanblog' ),
 			    'settings' => 'cleanblog_homeintro_image',
 			    'section'  => 'cleanblog_homeintro_options'
 			)
@@ -248,7 +248,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 		'cleanblog_homeintro_title',
 		array(
 			'section'  => 'cleanblog_homeintro_options',
-			'label'    => 'Title',
+			'label'    => __( 'Title', 'cleanblog' ),
 			'type'     => 'text'
 		)
 	);
@@ -266,7 +266,7 @@ function cleanblog_register_theme_customizer( $wp_customize ) {
 		'cleanblog_homeintro_subtitle',
 		array(
 			'section'  => 'cleanblog_homeintro_options',
-			'label'    => 'Subtitle',
+			'label'    => __( 'Subtitle', 'cleanblog' ),
 			'type'     => 'text'
 		)
 	);
