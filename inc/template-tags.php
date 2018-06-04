@@ -410,6 +410,8 @@ function cleanblog_social() {
 		'vine',
 		'tumblr',
 		'youtube',
+		'gitlab',
+		'bitbucket',
 	); ?>
 
 	<ul class="list-inline text-center">

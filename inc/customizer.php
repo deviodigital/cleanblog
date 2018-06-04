@@ -19,6 +19,8 @@ function cleanblog_register_social_links( $wp_customize ) {
 		'Vine',
 		'Tumblr',
 		'YouTube',
+		'Gitlab',
+		'Bitbucket',
 	);
 
 	$wp_customize->add_section(
