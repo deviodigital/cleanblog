@@ -1,11 +1,11 @@
 Clean Blog
 ---
-**Contributors:** deviodigital  
-**Tags:** theme, templates  
-**Requires at least:** 3.4  
-**Tested up to:** 4.9.5  
-**Stable tag:** 1.1.4  
-**License:** GPLv2 or later  
+**Contributors:** deviodigital
+**Tags:** theme, templates
+**Requires at least:** 3.4
+**Tested up to:** 6.2.2
+**Stable tag:** 1.1.5
+**License:** GPLv2 or later
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html
 
 ![header](http://www.robertdevore.com/wp-content/uploads/2016/02/cleanblog-header.jpg)
